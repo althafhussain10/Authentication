@@ -1,9 +1,9 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = 'https://authentication-glh8.vercel.app/';
 
-
+axios.defaults.credentials = true;
 /** Make API Requests */
 
 
