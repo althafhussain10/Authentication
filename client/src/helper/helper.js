@@ -1,7 +1,7 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-axios.defaults.baseURL = 'https://authentication-glh8.vercel.app/';
+axios.defaults.baseURL = 'https://authentication-khaki-omega.vercel.app/';
 
 axios.defaults.credentials = true;
 /** Make API Requests */

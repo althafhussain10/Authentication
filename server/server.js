@@ -9,7 +9,7 @@ const app = express();
 /** middlewares */
 app.use(express.json());
 app.use(cors({
-    origin: ['https://authentication-glh8.vercel.app/'],
+    origin: ['https://authentication-khaki-omega.vercel.app/'],
     methods: ['POST','GET'],
     credentials: true
 }));
