@@ -11,8 +11,22 @@ app.use(express.json());
 app.use(cors({
     origin: ['https://authentication-glh8.vercel.app/'],
     methods: ['POST','GET'],
-    credentials: true
+    credentials: true,
 }));
+
+
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+    );
+    next();
+  });
 app.use(morgan('tiny'));
 app.disable('x-powered-by'); // less hackers know about our stack
 
