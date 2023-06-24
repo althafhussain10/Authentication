@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { getUsername } from '../helper/helper'
 
-axios.defaults.baseURL = 'https://authentication-khaki-omega.vercel.app/';
+axios.defaults.baseURL = 'https://authentication-khaki-omega.vercel.app';
 
 
 /** custom hook */
