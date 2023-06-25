@@ -1,9 +1,9 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-axios.defaults.baseURL = 'https://authentication-khaki-omega.vercel.app';
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
 
-axios.defaults.credentials = true;
+// axios.defaults.credentials = true;
 /** Make API Requests */
 
 
