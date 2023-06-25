@@ -8,9 +8,7 @@ const app = express();
 
 /** middlewares */
 app.use(express.json());
-app.use(cors({
-    origin: 'https://authentication-glh8.vercel.app',
-}));
+app.use(cors());
 
 
 // app
