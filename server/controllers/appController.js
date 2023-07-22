@@ -145,7 +145,7 @@ export async function login(req,res){
 export async function getUser(req,res){
     
     const { username } = req.params;
-
+    console.log(username);
     try {
         
         if(!username) return res.status(501).send({ error: "Invalid Username"});
